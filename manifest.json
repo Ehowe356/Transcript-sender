@@ -1,0 +1,16 @@
+{
+  "name": "Transcript Sender",
+  "version": "1.0",
+  "description": "Request your transcripts to be sent anywhere!",
+  "manifest_version": 2,
+  "content_scripts":[
+    {
+      "matches":["<all_urls>"],
+      "js":["content.js"]
+    }
+  ],
+  "browser_action":{
+    "default_popup":"popup.html",
+    "default_title":"Sender"
+  }
+}

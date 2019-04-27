@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <title>test</title>
+     <style>
+     .color-box{
+       background-color: blue;
+       width: 500px;
+       height: 100px;
+
+     }
+     button{
+       position:absolute;
+        margin-left:46%;
+        width:50px;
+        bottom:15px;
+      }
+      body {
+         min-height: 400px;
+         min-width: 500px; /* your desired width */
+         max-width: 500px;
+         position: relative;
+         vertical-align:middle;
+      }
+      .container{
+        position:relative;
+        width: 400px;
+        height: 100px;
+        left:50px;
+        bottom:75px;
+        font-size: 400%;
+        color: white;
+      }
+      .name{
+        position:relative;
+        bottom:75px;
+      }
+      .id{
+        position:relative;
+        bottom:97px;
+        left:250px;
+      }
+      .sendToTr{
+        position:relative;
+        bottom:87px;
+
+      }
+     </style>
+   </head>
+   <body>
+     <div class = "color-box"></div>
+     <div class="container">
+        Transcript Sender
+     </div>
+     <form action="/action_page.php">
+
+        <div class="name">
+          name: <input type="text" name="FirstName"><br>
+        </div>
+
+        <div class="id">
+            ID# <input type="text" name= "ID"><br>
+        </div>
+
+        <div class="sendToTr">
+            Send Transcript to: <input type ="text" name="sendTT"><br>
+        </div>
+
+        <input type="submit" value="Submit">
+     </form>
+   </body>
+ </html>
